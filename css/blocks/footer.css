@@ -1,0 +1,26 @@
+
+.footer__top {
+  color: var(--color-text2);
+  background-color: #2F324B;
+  padding: clamp(1.813rem, 1.335rem + 2.39vw, 3.125rem) 0;
+}
+
+.footer__bottom {
+  display: none;
+}
+
+@media (max-width: 570px) {
+  .footer__bottom {
+    display: block;
+    color: var(--color-text2);
+    background-color: #2A2C3F;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .footer__author {
+    font-size: clamp(0.5rem, 0.409rem + 0.45vw, 0.75rem);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,145 @@
+
+.about {
+  padding: clamp(1.875rem, 0.852rem + 5.11vw, 4.688rem) 0;
+}
+
+.about__content {
+  max-width: 885px;
+  margin: 0 auto;
+}
+
+.about__header {
+  color: var(--color-text);
+  margin: 0 0 58px 0;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: clamp(1.25rem, 0.909rem + 1.7vw, 2.188rem);
+  line-height: 0.85;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+.about__heading {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 34px 0;
+}
+
+.about__heading:before,
+.about__heading:after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 2px;
+  background-color: var(--color-text);
+}
+
+.about__heading:before {
+  margin: 0 23px 0 0;
+}
+
+.about__heading:after {
+  margin: 0 0 0 23px;
+}
+
+.about__description {
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+  line-height: 1.38;
+  text-align: center;
+  padding: 0 90px;
+}
+
+.about__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.about__item {
+  flex: 0 1 183px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__circle {
+  width: 122px;
+  height: 122px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 16px 0;
+}
+
+.about__number {
+  font-weight: 500;
+  font-size: 57px;
+  line-height: 100%;
+  color: var(--color-text2);
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: clamp(1.125rem, 1.08rem + 0.23vw, 1.25rem);
+  line-height: 1.4;
+  text-align: center;
+  color: var(--color-text);
+}
+
+@media (max-width: 1024px) {
+  .about__header {
+    margin: 0 0 50px 0;
+  }
+
+  .about__description {
+    padding: 0 90px;
+  }
+
+  .about__circle {
+    width: 104px;
+    height: 104px;
+  }
+
+  .about__list {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about__description {
+    padding: 0;
+  }
+
+  .about__list {
+    gap: 40px;
+  }
+
+  .about__heading:before,
+  .about__heading:after {
+    width: 20px;
+    height: 1px;
+  }
+
+  .about__heading:before {
+    margin: 0 12px 0 0;
+  }
+
+  .about__heading:after {
+    margin: 0 0 0 12px;
+  }
+
+  .about__heading {
+    margin: 0 0 26px 0;
+  }
+}

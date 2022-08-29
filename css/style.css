@@ -1,0 +1,14 @@
+
+@import "fonts.css";
+@import "normalize.css";
+@import "vars.css";
+@import "global.css";
+
+
+@import "blocks/banner.css";
+@import "blocks/inner.css";
+@import "blocks/btn.css";
+@import "blocks/about.css";
+@import "blocks/questions.css";
+@import "blocks/form.css";
+@import "blocks/footer.css";

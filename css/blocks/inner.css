@@ -1,0 +1,121 @@
+
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner__logo {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.76;
+  font-family: "Pacifico", sans-serif;
+  color: var(--color-text2);
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 19px 0 0;
+}
+
+.inner__block {
+  display: flex;
+  align-items: center;
+}
+
+.inner__copy {
+  font-size: clamp(0.5rem, 0.409rem + 0.45vw, 0.75rem);
+  line-height: 1.4;
+}
+
+.inner__author {
+  font-size: clamp(0.5rem, 0.409rem + 0.45vw, 0.75rem);
+  line-height: 1.4;
+}
+
+.inner__phone {
+  color: var(--color-text2);
+  text-align: center;
+  padding: 7px 0 0 0;
+}
+
+.inner__number {
+  font-weight: 400;
+  font-size: clamp(1.313rem, 1.244rem + 0.34vw, 1.5rem);
+  line-height: 1.16;
+  text-align: center;
+  display: block;
+}
+
+.inner__callback {
+  font-weight: 400;
+  font-size: clamp(0.813rem, 0.744rem + 0.34vw, 1rem);
+  border-bottom: 1px solid var(--color-text2);
+}
+
+@media (max-width: 1024px) {
+  .inner__logo {
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .inner__number {
+    font-size: 21px;
+  }
+
+  .inner__callback {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .inner__logo {
+    font-size: 11px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .inner__phone {
+    width: 24px;
+    height: 24px;
+    background-color: #555A7B;
+    position: relative;
+    border-radius: 50%;
+  }
+
+  .inner__phone:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../../img/icon/phone.svg") center center / contain no-repeat;
+    width: 12px;
+    height: 12px;
+  }
+
+  .inner__number {
+    display: none;
+  }
+
+  .inner__callback {
+    display: none;
+  }
+
+  .inner__author {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .inner__author {
+    display: none;
+  }
+}
